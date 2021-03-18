@@ -10,13 +10,14 @@ function SignInForm() {
     const [check, setCheck] = useState(true);
     return (
         <div className="Form">
-            <Headers.FormHeader title="Daniel Ssejjemba" />
+            <Headers.FormHeader title="Dally Technologies" />
             <Inputs.ValidationInput
                 value={email}
                 onChange={setEmail}
                 error=""
                 label="Email"
                 type="email"
+                id="signin-email"
             />
             <Inputs.ValidationInput
                 value={password}
@@ -24,6 +25,7 @@ function SignInForm() {
                 error=""
                 label="Password"
                 type="password"
+                id="signin-password"
             />
             <Inputs.CheckBox
                 label="Remember me"

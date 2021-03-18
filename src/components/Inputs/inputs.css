@@ -101,7 +101,7 @@
     --gray: #ebebeb;
     --dark-gray: #A1A1A1;
     --blue: #012f51;
-    --yellow: #f7a41d;
+    --primary: #24245C;
     --button-width: 63px;
     --button-height: 37.5px;
     --toggle-diameter: 30px;
@@ -136,7 +136,7 @@
   }
   
   .checkbox-input:checked + span {
-    background-color: var(--yellow);
+    background-color: var(--primary);
   }
   
   .checkbox-input:checked + span::after {
@@ -165,6 +165,8 @@
       width: 200px;
       color: var(--dark-gray);
       flex-shrink: 0;
+      margin-top: 8px;
+      margin-left: 18px;
   }
 
   .toggle-text {
