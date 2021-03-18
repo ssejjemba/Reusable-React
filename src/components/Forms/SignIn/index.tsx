@@ -8,13 +8,22 @@ function SignInForm() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [check, setCheck] = useState(true);
+
+    function ValidateEmail(input: string): string {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (input.match(validRegex) || input === "") {
+            return "";
+        } else {
+            return "invalid";
+        }
+    }
     return (
         <div className="Form">
             <Headers.FormHeader title="Dally Technologies" />
             <Inputs.ValidationInput
                 value={email}
                 onChange={setEmail}
-                error=""
+                error={ValidateEmail(email)}
                 label="Email"
                 type="email"
                 id="signin-email"

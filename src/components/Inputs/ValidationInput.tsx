@@ -23,7 +23,7 @@ const input = (props: {
                 placeholder={props.placeholder || ""}
             />
             <label htmlFor={props.id}>{props.label}</label>
-            <div className="req-mark">!</div>
+            {props.error ? <div className="req-mark">!</div> : null}
         </div>
     );
 };
