@@ -1,0 +1,9 @@
+.round-button {
+    background-color: #24245C;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+}

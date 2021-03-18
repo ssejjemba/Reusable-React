@@ -1,0 +1,16 @@
+.formHeader{
+    background-color: #24245C;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    height: 150px;
+    width: 700px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.formHeader p {
+    padding: 50px;
+    color: white;
+}

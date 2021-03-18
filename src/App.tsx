@@ -1,18 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Components from "./components";
 
 function App() {
-    const [value, setValue] = useState("");
     return (
         <div className="App">
-            <Components.Inputs.ValidationInput
-                value={value}
-                onChange={setValue}
-                error=""
-                label="Email"
-                type="email"
-            />
+            <Components.Forms.SignInForm />
         </div>
     );
 }
